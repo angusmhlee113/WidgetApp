@@ -1,3 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-color: #1e2337;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p,
+button,
+strong {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
+}
+div {
+  color: white;
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 2rem !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 1.5rem !important;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  line-height: 24px !important;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.25px;
+}
+
+.Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  background-color: lightgray;
+  padding: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 6px;
+  width: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+
+button:disabled {
+  background-color: transparent !important;
+}
+
+input {
+  padding: 12px !important;
+  border-width: 1px;
+  border-color: #00f0ff;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.input_check_valid:invalid {
+  transition: border-color 0.5s ease-in-out;
+  border-color: red;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+.button_type2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button_secondary_action {
+  background-color: #94a3b8;
+}
+
+.button_back_button {
+  background-color: transparent;
+  border-width: 1px;
+  border-color: #00f0ff;
+}
+
+.button_type2:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.hollowed_button {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 1px;
+  border-color: #5a739b;
+}
+
+.button_explore {
+  background-image: linear-gradient(to right, #00f0ff 0%, #00c2ff 100%);
+  color: black;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.button_explore:hover {
+  background-image: linear-gradient(to right, #b5f2ff 0%, #b5f2ff 100%);
+}
+
+.shortDescription {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.desktopProductDescription {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8; /* number of lines to show */
+  line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+
+.desktopProductDescription_4lines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+.hoverShadow:hover {
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.9);
+}
+
+.hoverShadow_small:hover {
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.9);
+}
+
+.errorShadow {
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 1);
+}
+
+.szh-menu__item {
+  background-color: transparent;
+}
+
+.language_menu {
+  background-color: #1e293b;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  /* color: white !important; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(59, 79, 110);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5a739b;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  /* -webkit-box-shadow: 0 0 0 1000px #1b1b1b inset !important; */
+  -webkit-text-fill-color: white !important;
+}
+
+*:disabled {
+  color: gray !important;
+  background-color: rgba(20, 20, 20, 0.5) !important;
+}
